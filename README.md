@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# 🎯 Bingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-art styled bingo board for tracking your yearly goals and resolutions, built with React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+🔗 **[Live Preview](https://hankadev.github.io/bingo/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🎨 Retro pixel-art design with custom Press Start 2P font
+- 📱 Fully responsive layout
+- 🎯 5x5 bingo grid
+- 📊 Progress tracking for incomplete items
+- ✅ Visual completion indicators with animated cross overlay
+- 🎨 Custom color theme with vibrant pixel aesthetics
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS v4** - Styling with @tailwindcss/vite plugin
+- **Press Start 2P** - Pixel-perfect Google Font
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v18 or higher)
+- pnpm (recommended) or npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/
+│   ├── bingo-card.tsx    # Individual bingo card component
+│   ├── bingo-grid.tsx    # 5x5 grid layout
+│   └── header.tsx        # Header with BINGO letters
+├── data/
+│   └── data.ts           # Bingo items data
+├── App.tsx               # Main app component
+├── main.tsx              # App entry point
+└── index.css             # Global styles and Tailwind config
+```
+
+## 🎨 Customization
+
+### Colors
+
+Edit the color theme in `src/index.css`:
+
+```css
+@theme {
+  --color-cyan: #00d4ff;
+  --color-pink: #ff6eb4;
+  --color-yellow: #ffdd00;
+  --color-green: #22c55e;
+  --color-red: #ff4444;
+  --color-border: #555566;
+  --color-background: #2a2a3a;
+  --color-white: #f0f0f0;
+  --color-card: #3a3a4a;
+}
+```
+
+### Bingo Items
+
+Update your bingo items in `src/data/data.ts`.
+
+---
+
+## ☕ About
+
+This project was coded with coffee and AI.

@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyan: #00d4ff;
+  --color-pink: #ff6eb4;
+  --color-yellow: #ffdd00;
+  --color-green: #22c55e;
+  --color-red: #ff4444;
+  --color-border: #555566;
+  --color-background: #2a2a3a;
+  --color-white: #f0f0f0;
+  --color-card: #3a3a4a;
+}
+
+body {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  color: var(--color-white);
+}
+
+.pixel-border {
+  box-shadow: 4px 0 0 0 var(--color-border), -4px 0 0 0 var(--color-border), 0 4px 0 0 var(--color-border), 0 -4px 0 0 var(--color-border);
+}
