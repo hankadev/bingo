@@ -24,7 +24,7 @@ export const bingoItems: BingoItem[] = [
     id: 3,
     emoji: "🎤",
     text: "visit stand-up",
-    completed: false,
+    completed: true,
   },
   {
     id: 4,
