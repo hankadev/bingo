@@ -11,7 +11,7 @@ export const bingoItems: BingoItem[] = [
     id: 1,
     emoji: "🏃‍♀️",
     text: "run 500 km",
-    progress: 12.14,
+    progress: 14.4,
     completed: false,
   },
   {
@@ -30,7 +30,7 @@ export const bingoItems: BingoItem[] = [
     id: 4,
     emoji: "🌍",
     text: "visit 5 countries",
-    progress: 20,
+    progress: 40,
     completed: false,
   },
   {
@@ -56,7 +56,7 @@ export const bingoItems: BingoItem[] = [
     id: 8,
     emoji: "🏊‍♀️",
     text: "go swimming 10 times",
-    progress: 10,
+    progress: 20,
     completed: false,
   },
   {
@@ -76,7 +76,7 @@ export const bingoItems: BingoItem[] = [
     id: 11,
     emoji: "🎶",
     text: "visit 10 music events",
-    progress: 40,
+    progress: 50,
     completed: false,
   },
   {
@@ -123,7 +123,7 @@ export const bingoItems: BingoItem[] = [
     id: 18,
     emoji: "🛠️",
     text: "build blog page",
-    completed: false,
+    completed: true,
   },
   {
     id: 19,
